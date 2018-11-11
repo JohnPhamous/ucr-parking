@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
 
+import DetailsComp from './Details'
+
 const CardLayout = styled.div`
   width: 100%;
   background: #ffffff80;
@@ -82,6 +84,8 @@ export default class Card extends Component {
       totalSpaces: undefined,
       timestamp: '',
       location_address: '',
+      showDetails: false,
+      delta: undefined,
     }
   }
 
@@ -99,9 +103,16 @@ export default class Card extends Component {
         totalSpaces: json['total_spaces'],
         timestamp: json['date_time'],
         location_address: json['location_address'],
+        delta: generateRandomDelta(),
       })
     })
   }
+
+  showDetails = () => {
+    console.log('hi')
+    this.setState({ showDetails: !this.state.showDetails })
+  }
+
   render() {
     const FLAGS = this.props.lot.passes.map(pass => {
       const flagColor = FLAG_MAPPINGS[pass]
@@ -113,8 +124,9 @@ export default class Card extends Component {
       )
     })
     return (
-      <CardLayout>
-        {/* <Flag color=Pass</Flag> */}
+      <CardLayout
+        onClick={() => this.setState({ showDetails: !this.state.showDetails })}
+      >
         {FLAGS}
 
         <CardContentWrapper>
@@ -132,8 +144,10 @@ export default class Card extends Component {
           {this.state.openSpaces == undefined ? (
             <Details>Loading...</Details>
           ) : (
-            <Details>{generateRandomDelta()} in the past 30 minutes</Details>
+            <Details>{this.state.delta} in the past 30 minutes</Details>
           )}
+
+          {this.state.showDetails ? <DetailsComp /> : ''}
         </CardContentWrapper>
       </CardLayout>
     )
