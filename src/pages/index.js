@@ -16,31 +16,37 @@ const PARKING_LOTS = [
     name: 'Big Strings Structure',
     address: 'Big Springs Road',
     id: 84,
+    passes: ['housing'],
   },
   {
     name: 'Lot 6',
     address: 'West Campus Drive',
     id: 238,
+    passes: [],
   },
   {
     name: 'Lot 24',
     address: 'Canyon Crest Drive',
     id: 243,
+    passes: [],
   },
   {
     name: 'Lot 26',
     address: '3375 Rustin Avenue',
     id: 80,
+    passes: ['gold', 'night', 'red', 'blue'],
   },
   {
     name: 'Lot 30',
     address: 'UCR Lot 30',
     id: 82,
+    passes: ['gold', 'night', 'red', 'blue'],
   },
   {
     name: 'Lot 32',
     address: '4297 Canyon Crest Drive',
     id: 83,
+    passes: ['gold', 'night', 'red', 'blue'],
   },
 ]
 
