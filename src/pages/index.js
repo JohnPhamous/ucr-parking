@@ -9,7 +9,6 @@ const CardContainer = styled.div`
   height: 100vh;
   padding-top: 25px;
   padding-bottom: 25px;
-  /* background: blue; */
 `
 const PARKING_LOTS = [
   {

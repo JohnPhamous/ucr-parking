@@ -33,7 +33,7 @@ const Layout = ({ children }) => (
           ]}
         >
           <link
-            href="https://fonts.googleapis.com/css?family=Roboto"
+            href="https://fonts.googleapis.com/css?family=Roboto:400,500,900"
             rel="stylesheet"
           />
           <link

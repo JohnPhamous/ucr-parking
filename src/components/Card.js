@@ -25,11 +25,12 @@ const Details = styled.p`
 const Counter = styled.h1`
   font-family: 'Roboto', sans-serif;
   color: #272727;
+  font-weight: 900;
 `
 
 const TotalSpaces = styled.span`
   font-size: 0.5em;
-  margin-left: 10px;
+  margin-left: 5px;
   color: #777474;
   font-weight: 400;
 `
