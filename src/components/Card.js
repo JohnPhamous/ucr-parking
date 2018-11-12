@@ -66,7 +66,7 @@ const Delta = styled.span`
 const API_ENDPOINT = `https://cors-anywhere.herokuapp.com/https://streetsoncloud.com/parking/rest/occupancy/id/`
 
 const generateRandomDelta = () => {
-  let randomDelta = Math.random() * 0.08 * 100
+  let randomDelta = Math.random() * 0.02 * 100
   randomDelta *= Math.floor(Math.random() * 2) == 1 ? 1 : -1
   return (
     <Delta color={randomDelta < 0 ? 'red' : 'green'}>
@@ -110,7 +110,6 @@ export default class Card extends Component {
   }
 
   showDetails = () => {
-    console.log('hi')
     this.setState({ showDetails: !this.state.showDetails })
   }
 

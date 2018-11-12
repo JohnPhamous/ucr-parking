@@ -13,11 +13,11 @@ const CardContainer = styled.div`
 `
 const PARKING_LOTS = [
   {
-    name: 'Big Strings Structure',
+    name: 'Big Springs Structure',
     address: 'Big Springs Road',
     id: 84,
     passes: ['housing'],
-    data: [80, 83, 78, 75, 80, 45, 50, 89, 73, 92, 42, 46, 53, 73, 82, 80],
+    data: [80, 83, 78, 75, 80, 45, 50, 89, 73, 92, 42, 46, 53, 43, 32, 28],
     location: {
       lat: 33.976133,
       lng: -117.319742,
@@ -39,7 +39,7 @@ const PARKING_LOTS = [
     address: 'Canyon Crest Drive',
     id: 243,
     passes: [],
-    data: [15, 24, 29, 75, 80, 45, 50, 89, 73, 92, 42, 46, 53, 73, 82, 80],
+    data: [15, 24, 29, 75, 80, 45, 50, 89, 73, 92, 42, 46, 53, 43, 29, 14],
     location: {
       lat: 33.978352,
       lng: -117.330587,
@@ -50,7 +50,7 @@ const PARKING_LOTS = [
     address: '3375 Rustin Avenue',
     id: 80,
     passes: ['gold', 'night', 'red', 'blue'],
-    data: [3, 14, 23, 34, 59, 42, 63, 74, 59, 67, 57, 53, 42, 46, 33, 19],
+    data: [3, 14, 23, 34, 59, 42, 63, 74, 59, 67, 57, 53, 42, 46, 23, 13],
     location: {
       lat: 33.981693,
       lng: -117.334902,
@@ -72,7 +72,7 @@ const PARKING_LOTS = [
     address: '4297 Canyon Crest Drive',
     id: 83,
     passes: ['gold', 'night', 'red', 'blue'],
-    data: [80, 83, 78, 75, 80, 45, 50, 89, 73, 92, 42, 46, 53, 73, 82, 80],
+    data: [80, 83, 78, 75, 80, 45, 50, 89, 73, 92, 42, 46, 53, 33, 14, 3],
     location: {
       lat: 33.969253,
       lng: -117.332579,
