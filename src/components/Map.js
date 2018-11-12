@@ -17,11 +17,12 @@ export default class Map extends Component {
 
   render() {
     return (
-      <MapContainer style={{ height: `100px` }}>
+      <MapContainer style={{ height: `150px` }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: KEY }}
           defaultCenter={this.props.location}
           defaultZoom={15}
+          onClick={() => console.log('hi')}
         />
       </MapContainer>
     )
