@@ -18,6 +18,10 @@ const PARKING_LOTS = [
     id: 84,
     passes: ['housing'],
     data: [80, 83, 78, 75, 80, 45, 50, 89, 73, 92, 42, 46, 53, 73, 82, 80],
+    location: {
+      lat: 33.976133,
+      lng: -117.319742,
+    },
   },
   {
     name: 'Lot 6',
@@ -25,6 +29,10 @@ const PARKING_LOTS = [
     id: 238,
     passes: [],
     data: [10, 13, 20, 60, 55, 83, 71, 64, 69, 78, 64, 42, 33, 24, 28, 19],
+    location: {
+      lat: 33.969963,
+      lng: -117.327471,
+    },
   },
   {
     name: 'Lot 24',
@@ -32,6 +40,10 @@ const PARKING_LOTS = [
     id: 243,
     passes: [],
     data: [15, 24, 29, 75, 80, 45, 50, 89, 73, 92, 42, 46, 53, 73, 82, 80],
+    location: {
+      lat: 33.978352,
+      lng: -117.330587,
+    },
   },
   {
     name: 'Lot 26',
@@ -39,6 +51,10 @@ const PARKING_LOTS = [
     id: 80,
     passes: ['gold', 'night', 'red', 'blue'],
     data: [3, 14, 23, 34, 59, 42, 63, 74, 59, 67, 57, 53, 42, 46, 33, 19],
+    location: {
+      lat: 33.981693,
+      lng: -117.334902,
+    },
   },
   {
     name: 'Lot 30',
@@ -46,6 +62,10 @@ const PARKING_LOTS = [
     id: 82,
     passes: ['gold', 'night', 'red', 'blue'],
     data: [23, 43, 78, 83, 80, 60, 53, 49, 59, 69, 73, 68, 53, 42, 38, 20],
+    location: {
+      lat: 33.970141,
+      lng: -117.33276,
+    },
   },
   {
     name: 'Lot 32',
@@ -53,6 +73,10 @@ const PARKING_LOTS = [
     id: 83,
     passes: ['gold', 'night', 'red', 'blue'],
     data: [80, 83, 78, 75, 80, 45, 50, 89, 73, 92, 42, 46, 53, 73, 82, 80],
+    location: {
+      lat: 33.969253,
+      lng: -117.332579,
+    },
   },
 ]
 

@@ -52,7 +52,8 @@ const Flag = styled.span`
   writing-mode: tb-rl;
   float: right;
   border-radius: 0px 0px 10px 10px
-  color: rgba(0,0,0,0.35);
+  color: white;
+  font-weight: 800;
   margin-right: 5px;
   font-family: 'Montserrat', sans-serif;
 `
@@ -149,7 +150,10 @@ export default class Card extends Component {
           )}
 
           {this.state.showDetails ? (
-            <DetailsComp traffic={this.props.lot.data} />
+            <DetailsComp
+              traffic={this.props.lot.data}
+              location={this.props.lot.location}
+            />
           ) : (
             ''
           )}
