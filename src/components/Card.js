@@ -124,29 +124,32 @@ export default class Card extends Component {
       )
     })
     return (
-      <CardLayout
-        onClick={() => this.setState({ showDetails: !this.state.showDetails })}
-        style={this.props.style}
-      >
+      <CardLayout style={this.props.style}>
         {FLAGS}
 
         <CardContentWrapper>
-          <Details>{this.props.lot.name}</Details>
-          <Counter>
-            {this.state.openSpaces == undefined
-              ? 'Loading'
-              : this.state.openSpaces}
-            {this.state.totalSpaces == undefined ? (
-              ''
+          <div
+            onClick={() =>
+              this.setState({ showDetails: !this.state.showDetails })
+            }
+          >
+            <Details>{this.props.lot.name}</Details>
+            <Counter>
+              {this.state.openSpaces == undefined
+                ? 'Loading'
+                : this.state.openSpaces}
+              {this.state.totalSpaces == undefined ? (
+                ''
+              ) : (
+                <TotalSpaces>/{this.state.totalSpaces} spaces open</TotalSpaces>
+              )}
+            </Counter>
+            {this.state.openSpaces == undefined ? (
+              <Details>Loading...</Details>
             ) : (
-              <TotalSpaces>/{this.state.totalSpaces} spaces open</TotalSpaces>
+              <Details>{this.state.delta} in the past 30 minutes</Details>
             )}
-          </Counter>
-          {this.state.openSpaces == undefined ? (
-            <Details>Loading...</Details>
-          ) : (
-            <Details>{this.state.delta} in the past 30 minutes</Details>
-          )}
+          </div>
 
           {this.state.showDetails ? (
             <DetailsComp

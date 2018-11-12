@@ -3,7 +3,9 @@ import styled from 'styled-components'
 
 import GoogleMapReact from 'google-map-react'
 
-const MapContainer = styled.div``
+const MapContainer = styled.div`
+  height: 150px;
+`
 const KEY = `AIzaSyBHgqIvIIprykyo2VLEyluGhBI28q2zFQg`
 
 export default class Map extends Component {
@@ -15,18 +17,20 @@ export default class Map extends Component {
     zoom: 15,
   }
 
+  redirect = event => {
+    window.location.href = `https://www.google.com/maps/search/?api=1&query=${
+      this.props.location.lat
+    },${this.props.location.lng}`
+  }
+
   render() {
     return (
-      <MapContainer style={{ height: `150px` }}>
+      <MapContainer>
         <GoogleMapReact
           bootstrapURLKeys={{ key: KEY }}
           defaultCenter={this.props.location}
           defaultZoom={15}
-          onClick={() =>
-            (window.location.href = `https://www.google.com/maps/search/?api=1&query=${
-              this.props.location.lat
-            },${this.props.location.lng}`)
-          }
+          onClick={this.redirect}
         >
           <img
             src="https://i.imgur.com/yK3IZHv.png"
