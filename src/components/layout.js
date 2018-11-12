@@ -32,6 +32,7 @@ const Layout = ({ children }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
+          <meta name="mobile-web-app-capable" content="yes" />
           <link
             href="https://fonts.googleapis.com/css?family=Roboto:400,500,900"
             rel="stylesheet"
