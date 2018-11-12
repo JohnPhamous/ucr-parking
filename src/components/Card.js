@@ -126,6 +126,7 @@ export default class Card extends Component {
     return (
       <CardLayout
         onClick={() => this.setState({ showDetails: !this.state.showDetails })}
+        style={this.props.style}
       >
         {FLAGS}
 

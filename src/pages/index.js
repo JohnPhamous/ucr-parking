@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import Card from '../components/Card'
 
+import { Trail } from 'react-spring'
 import styled from 'styled-components'
 
 const CardContainer = styled.div`
@@ -55,12 +56,27 @@ const PARKING_LOTS = [
   },
 ]
 
-const CARDS = PARKING_LOTS.map(card => {
-  return <Card lot={card} key={card.id} />
-})
 const IndexPage = () => (
   <Layout>
-    <CardContainer>{CARDS}</CardContainer>
+    <CardContainer>
+      <Trail
+        items={PARKING_LOTS}
+        keys={card => card.id}
+        from={{
+          transform: 'translate3d(0,-1000px,0)',
+          opacity: 0,
+        }}
+        to={{
+          transform: 'translate3d(0,0px,0)',
+          opacity: 1,
+        }}
+        config={{
+          delay: 250,
+        }}
+      >
+        {card => props => <Card style={props} lot={card} key={card.id} />}
+      </Trail>
+    </CardContainer>
   </Layout>
 )
 
