@@ -147,7 +147,11 @@ export default class Card extends Component {
             <Details>{this.state.delta} in the past 30 minutes</Details>
           )}
 
-          {this.state.showDetails ? <DetailsComp /> : ''}
+          {this.state.showDetails ? (
+            <DetailsComp traffic={this.props.lot.data} />
+          ) : (
+            ''
+          )}
         </CardContentWrapper>
       </CardLayout>
     )

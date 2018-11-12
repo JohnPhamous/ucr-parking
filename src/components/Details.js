@@ -6,7 +6,7 @@ export default class DetailsComp extends Component {
   render() {
     return (
       <div>
-        <Chart />
+        <Chart data={this.props.traffic} />
       </div>
     )
   }

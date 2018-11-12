@@ -16,36 +16,42 @@ const PARKING_LOTS = [
     address: 'Big Springs Road',
     id: 84,
     passes: ['housing'],
+    data: [80, 83, 78, 75, 80, 45, 50, 89, 73, 92, 42, 46, 53, 73, 82, 80],
   },
   {
     name: 'Lot 6',
     address: 'West Campus Drive',
     id: 238,
     passes: [],
+    data: [10, 13, 20, 60, 55, 83, 71, 64, 69, 78, 64, 42, 33, 24, 28, 19],
   },
   {
     name: 'Lot 24',
     address: 'Canyon Crest Drive',
     id: 243,
     passes: [],
+    data: [15, 24, 29, 75, 80, 45, 50, 89, 73, 92, 42, 46, 53, 73, 82, 80],
   },
   {
     name: 'Lot 26',
     address: '3375 Rustin Avenue',
     id: 80,
     passes: ['gold', 'night', 'red', 'blue'],
+    data: [3, 14, 23, 34, 59, 42, 63, 74, 59, 67, 57, 53, 42, 46, 33, 19],
   },
   {
     name: 'Lot 30',
     address: 'UCR Lot 30',
     id: 82,
     passes: ['gold', 'night', 'red', 'blue'],
+    data: [23, 43, 78, 83, 80, 60, 53, 49, 59, 69, 73, 68, 53, 42, 38, 20],
   },
   {
     name: 'Lot 32',
     address: '4297 Canyon Crest Drive',
     id: 83,
     passes: ['gold', 'night', 'red', 'blue'],
+    data: [80, 83, 78, 75, 80, 45, 50, 89, 73, 92, 42, 46, 53, 73, 82, 80],
   },
 ]
 
